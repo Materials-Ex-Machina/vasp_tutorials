@@ -1,0 +1,77 @@
+The current hostname is p0131.ten.osc.edu
+The current working directory is /users/PAA0028/sjtuwjx1994
+Switching to the working directory /users/PAA0028/sjtuwjx1994/repos/vasp_tutorials/lessons/lesson_02/kpoint_convergence/11
+switching compiler chain
+module load intel/19.0.5
+module load intelmpi/2019.3
+VASP_STD_BIN=/users/PAA0028/sjtuwjx1994/usr/local/vasp/vasp.5.4.1/bin/vasp_std
+ running on   40 total cores
+ distrk:  each k-point on   40 cores,    1 groups
+ distr:  one band on    8 cores,    5 groups
+ using from now: INCAR     
+ vasp.5.4.1 05Feb16 (build Feb 24 2020 14:33:01) complex                        
+  
+ POSCAR found type information on POSCAR  Si
+ POSCAR found :  1 types and       8 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.301687411759E+02    0.30169E+02   -0.77749E+03  2800   0.560E+02
+DAV:   2    -0.412798599491E+02   -0.71449E+02   -0.68606E+02  3665   0.111E+02
+DAV:   3    -0.439699554139E+02   -0.26901E+01   -0.26750E+01  3730   0.207E+01    0.112E+01
+DAV:   4    -0.435015110229E+02    0.46844E+00   -0.44390E-01  3685   0.314E+00    0.664E+00
+DAV:   5    -0.432731701920E+02    0.22834E+00   -0.49527E-01  3365   0.280E+00    0.385E-01
+DAV:   6    -0.432777859361E+02   -0.46157E-02   -0.19653E-02  3540   0.622E-01    0.204E-01
+DAV:   7    -0.432793582725E+02   -0.15723E-02   -0.29582E-03  3230   0.231E-01    0.123E-01
+DAV:   8    -0.432794594144E+02   -0.10114E-03   -0.15431E-04  2905   0.617E-02    0.631E-02
+DAV:   9    -0.432795126190E+02   -0.53205E-04   -0.71292E-05  2510   0.430E-02
+   1 F= -.43279513E+02 E0= -.43279513E+02  d E =-.432795E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.324E-59 g(S)=  0.109E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.109E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.432928086193E+02   -0.13349E-01   -0.26395E+00  3210   0.640E+00
+DAV:   2    -0.432987487500E+02   -0.59401E-02   -0.59401E-02  3565   0.103E+00
+DAV:   3    -0.432987936715E+02   -0.44921E-04   -0.44921E-04  3460   0.103E-01    0.184E+00
+DAV:   4    -0.432407991124E+02    0.57995E-01   -0.27817E-02  2905   0.595E-01    0.911E-01
+DAV:   5    -0.432122708114E+02    0.28528E-01   -0.42148E-02  3260   0.740E-01    0.305E-01
+DAV:   6    -0.432120546667E+02    0.21614E-03   -0.20492E-03  3325   0.202E-01    0.134E-01
+DAV:   7    -0.432119933322E+02    0.61335E-04   -0.22473E-04  3040   0.540E-02
+   2 F= -.43211993E+02 E0= -.43211993E+02  d E =0.675193E-01
+ trial-energy change:    0.067519  1 .order    0.063851   -0.109439    0.237140
+ step:   0.3024(harm=  0.3158)  dis= 0.00000  next Energy=   -43.295957 (dE=-0.164E-01)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.433346950209E+02   -0.12264E+00   -0.13264E+00  3215   0.464E+00
+DAV:   2    -0.433382985758E+02   -0.36036E-02   -0.36035E-02  3540   0.757E-01
+DAV:   3    -0.433383180602E+02   -0.19484E-04   -0.19484E-04  3215   0.706E-02    0.131E+00
+DAV:   4    -0.433095544005E+02    0.28764E-01   -0.13750E-02  2845   0.425E-01    0.636E-01
+DAV:   5    -0.432956489245E+02    0.13905E-01   -0.20382E-02  3210   0.521E-01    0.231E-01
+DAV:   6    -0.432956349954E+02    0.13929E-04   -0.10023E-03  3360   0.145E-01    0.102E-01
+DAV:   7    -0.432955703437E+02    0.64652E-04   -0.87810E-05  1900   0.352E-02
+   3 F= -.43295570E+02 E0= -.43295570E+02  d E =-.160577E-01
+ curvature:  -0.16 expect dE=-0.251E-05 dE for cont linesearch -0.251E-05
+ trial: gam= 0.00000 g(F)=  0.428E-59 g(S)=  0.159E-04 ort =-0.132E-02 (trialstep = 0.860E+00)
+ search vector abs. value=  0.159E-04
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
+
+-----------------------
+Resources requested:
+nodes=1:ppn=40
+mem=190440mb
+-----------------------
+Resources used:
+cput=00:08:45
+walltime=00:00:15
+mem=0.002GB
+vmem=0.000GB
+-----------------------
+Resource units charged (estimate):
+0.016 RUs
+-----------------------
